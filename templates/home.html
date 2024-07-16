@@ -7,7 +7,6 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: black;
             margin: 0;
             padding: 0;
         }
@@ -32,7 +31,7 @@
             font-size: 1.4em;
         }
 
-        a {
+        as {
             display: block;
             background-color: #4CAF50;
             color: white;
@@ -44,7 +43,7 @@
             margin: 20px auto;
         }
 
-        a:hover {
+        as:hover {
             background-color: #45a049;
         }
     </style>
@@ -53,8 +52,10 @@
     <div class="container">
         <h3>Want to know the flight price of your upcoming journey?</h3>
         <h4>You are at the right place!</h4>
-        <a href="{{ url_for('predict') }}">Click Here to predict!</a>
-        <h4 href="https://linkedin.com/upesh-jeengar">Upesh</h4>
+        <a class="as" href="{{ url_for('predict') }}">Click Here to predict!</a>
+        <div class="container">
+            Made by: <a href="https://linkedin.com/in/upesh-jeengar">Upesh</a>
+        </div>
     </div>
 </body>
 </html>
